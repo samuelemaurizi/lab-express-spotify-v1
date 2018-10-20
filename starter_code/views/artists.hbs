@@ -1,0 +1,21 @@
+<div class="nav mb-1 pl-4 pt-2 pb-2 bg-light">
+  <a href="/" class="btn btn-success btn-sm w-25 p-2">Search</a>
+  <h5 class="w-75 pl-4 p-2">Result for: <strong class="ml-2"> {{artists.[0].name}} </strong> </h5>
+</div>
+<div class="container">
+  <div class="row">
+    {{#each artists}}
+    <div class="col-lg-4 card p-2 artist-container bg-light">
+      {{#if this.images}}
+      <img src=" {{this.images.0.url}} " alt="" class="">
+      {{else}}
+      <img src="https://dummyimage.com/300" alt="" class="card-img-top">
+      {{/if}}
+      <div class="text-center pt-2 pb-2">
+        <h6 class="card-title"> {{this.name}} </h6>
+        <a href="/albums/{{id}}" class="btn btn-sm btn-danger">View Albums</a>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
