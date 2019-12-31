@@ -1,0 +1,3 @@
+// Spotify Credentil
+const clientId = "314baa8e0b7b4e6ea8f5103d140b261a";
+const clientSecret = "2f9947aaf1c942d083fae00910757598";
